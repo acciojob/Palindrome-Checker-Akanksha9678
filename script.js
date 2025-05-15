@@ -2,11 +2,11 @@
 
 function palindrome(str){
 	let str1="";
-	str.toLowerCase();
+	str=str.toLowerCase();
 	for(let t of str){
 		str1=t+str1;
 	}
-	if(str1==str){
+	if(str1===str){
 		return true;
 	}
 	else{
