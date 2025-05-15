@@ -1,8 +1,10 @@
 // complete the given function
 
 function palindrome(str){
-	let str1=str;
-	str1.reverse();
+	let str1="";
+	for(let t of str){
+		str1=t+str1;
+	}
 	if(str1==str){
 		return true;
 	}
